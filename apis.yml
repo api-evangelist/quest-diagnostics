@@ -1,0 +1,7 @@
+aid: quest-diagnostics
+url: https://raw.githubusercontent.com/api-evangelist/quest-diagnostics/refs/heads/main/apis.yml
+modified: '2026-03-21'
+apis: []
+common:
+  - type: Website
+    url: https://www.quest-diagnostics.com

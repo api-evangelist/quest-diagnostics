@@ -4,141 +4,44 @@ schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main
 provider: Quest Diagnostics
 providerId: quest-diagnostics
 created: '2026-05-04'
-modified: '2026-05-04'
+modified: '2026-05-05'
+reconciled: false
 tags:
-  - Diagnostics
-  - Fortune 500
   - Healthcare
+  - Diagnostics
   - Laboratory
   - Lab Services
-description: Machine-readable plans and pricing scaffold for this API provider. Conforms to the API Commons
-  Plans schema. Tier limits and prices are scaffold defaults; replace with provider-published values.
+notes: Quest Diagnostics' Quanum Data Exchange and broader interoperability APIs are sold to enterprise
+  healthcare buyers (hospitals, EHR vendors, health plans) under direct contracts; Quest does not publish
+  a self-serve API pricing page. The Quest healthcare-IT API surface was not reachable on a public pricing
+  URL during reconciliation (404 against questdiagnostics.com/business-solutions/healthcare-it-solutions/api).
+  Reconciled flagged false until a public commercial surface is published.
+description: Quest Diagnostics distributes its Quanum Data Exchange and related interoperability APIs
+  through enterprise customer contracts; commercial terms are negotiated with the Quest healthcare
+  IT sales team rather than priced on a public tier table.
+sources:
+  - https://www.questdiagnostics.com/
 plans:
-  - id: quest-diagnostics-free
-    name: Free
-    type: freemium
-    description: Free entry tier for the Quest Diagnostics API surface. Intended for evaluation, prototyping,
-      and low-volume integrations. Real limits and pricing must be reconciled with the provider's published
-      plan documentation.
-    entries:
-      - label: API Requests
-        description: Monthly API request quota across all included endpoints
-        name: api_requests
-        type: quota
-        metric: requests
-        limit: 1000
-        timeFrame: month
-        geo: global
-        domains: []
-        unit: 1
-        price: '0.00'
-        userMultiplied: false
-      - label: Rate Limit
-        description: Maximum requests per minute on the free tier
-        name: rate_limit
-        type: rate
-        metric: requests_per_minute
-        limit: 10
-        timeFrame: minute
-        geo: global
-        domains: []
-        unit: 1
-        price: '0.00'
-        userMultiplied: false
-    elements:
-      - name: Public Documentation
-      - name: Community Support
-      - name: Sandbox Access
-      - name: Quanum Data Exchange
-      - name: Quanum eLabs
-  - id: quest-diagnostics-pro
-    name: Professional
-    type: paid
-    description: Production tier for Quest Diagnostics. Provides higher quotas, priority support, and
-      access to the broader API portfolio. Pricing placeholder; align with the provider's pricing page.
-    entries:
-      - label: API Requests
-        description: Monthly API request quota
-        name: api_requests
-        type: quota
-        metric: requests
-        limit: 100000
-        timeFrame: month
-        geo: global
-        domains: []
-        unit: 1
-        price: TBD
-        userMultiplied: false
-      - label: Rate Limit
-        description: Maximum requests per minute on the professional tier
-        name: rate_limit
-        type: rate
-        metric: requests_per_minute
-        limit: 100
-        timeFrame: minute
-        geo: global
-        domains: []
-        unit: 1
-        price: '0.00'
-        userMultiplied: false
-      - label: Overage
-        description: Per-request price after monthly quota is exceeded
-        name: overage
-        type: metered
-        metric: requests
-        limit: -1
-        timeFrame: month
-        geo: global
-        domains: []
-        unit: 1000
-        price: TBD
-        userMultiplied: false
-    elements:
-      - name: All Production Endpoints
-      - name: Email Support
-      - name: SLA Targets
-      - name: Webhook Subscriptions
-      - name: Quanum Data Exchange
-      - name: Quanum eLabs
-  - id: quest-diagnostics-enterprise
-    name: Enterprise
+  - id: quest-diagnostics-contact-sales
+    name: Contact Sales
     type: enterprise
-    description: Custom-negotiated tier for Quest Diagnostics. Includes dedicated capacity, contractual
-      SLAs, security review, data residency options, and named technical account management.
+    description: Enterprise integration with Quanum Data Exchange and other Quest APIs is contracted
+      through the Quest Diagnostics healthcare IT team; pricing is per-engagement.
     entries:
-      - label: API Requests
-        description: Negotiated request volume; -1 indicates uncapped subject to fair use
-        name: api_requests
-        type: quota
-        metric: requests
+      - label: Enterprise Engagement
+        name: enterprise_engagement
+        type: flat
+        metric: varies
         limit: -1
-        timeFrame: month
-        geo: configurable
-        domains: []
+        timeFrame: usage
         unit: 1
-        price: custom
-        userMultiplied: false
-      - label: Rate Limit
-        description: Negotiated burst and steady-state rate
-        name: rate_limit
-        type: rate
-        metric: requests_per_minute
-        limit: 1000
-        timeFrame: minute
-        geo: configurable
-        domains: []
-        unit: 1
-        price: custom
+        price: contact sales
         userMultiplied: false
     elements:
-      - name: Unlimited / Negotiated Volume
-      - name: 24/7 Dedicated Support
-      - name: Contractual SLA
-      - name: Security & Compliance Review
-      - name: Dedicated Account Manager
-      - name: Custom Data Residency
       - name: Quanum Data Exchange
-      - name: Quanum eLabs
+      - name: EHR Integration
+      - name: Lab Order and Result Interfaces
+      - name: Custom Implementation Services
 maintainers:
-  - FN: API Evangelist
-    email: info@apievangelist.com
+  - FN: Kin Lane
+    email: kin@apievangelist.com

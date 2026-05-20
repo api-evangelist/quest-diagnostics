@@ -53,6 +53,8 @@ apis:
       - type: Documentation
         url: https://www.questdiagnostics.com/healthcare-professionals/about-our-tests/quanum-elabs
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/quest-diagnostics
   - type: Website
     url: https://www.questdiagnostics.com
   - type: Healthcare Professionals

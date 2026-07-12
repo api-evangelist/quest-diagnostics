@@ -53,6 +53,8 @@ apis:
       - type: Documentation
         url: https://www.questdiagnostics.com/healthcare-professionals/about-our-tests/quanum-elabs
 common:
+  - type: DomainSecurity
+    url: security/quest-diagnostics-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/quest-diagnostics
   - type: Website
@@ -65,6 +67,8 @@ common:
     url: https://myquest.questdiagnostics.com/
   - type: Quest Health
     url: https://www.questhealth.com/
+  - url: https://newsroom.questdiagnostics.com/
+    type: Blog
 maintainers:
   - FN: API Evangelist
     email: info@apievangelist.com

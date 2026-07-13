@@ -1,0 +1,14 @@
+{
+  "repo": "quest-diagnostics",
+  "feeds": [
+    {
+      "source": "https://newsroom.questdiagnostics.com/",
+      "feed_url": "https://newsroom.questdiagnostics.com/press-releases?pagetemplate=rss",
+      "title": "",
+      "saved": 2,
+      "method": "discovered"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 17
+}

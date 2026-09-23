@@ -1,7 +1,9 @@
 ---
 title: Quest Diagnostics to Collaborate with Google Cloud ...
 url: https://www.prnewswire.com/news-releases/quest-diagnostics-to-collaborate-with-google-cloud-to-streamline-data-and-personalize-customer-experiences-using-generative-ai-302403989.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Quest Diagnostics" press release artificial intelligence'
 position: 1
 source: serpapi-google

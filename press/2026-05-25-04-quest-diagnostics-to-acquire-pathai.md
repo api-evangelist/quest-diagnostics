@@ -1,7 +1,9 @@
 ---
 title: Quest Diagnostics to Acquire PathAI ...
 url: https://www.pathai.com/resources/quest-diagnostics-acquire-pathai-diagnostics
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Quest Diagnostics" press release artificial intelligence'
 position: 4
 source: serpapi-google

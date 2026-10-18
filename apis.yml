@@ -57,6 +57,11 @@ apis:
       - Healthcare
       - Lab Results
       - Interoperability
+      - Electronic Health Records
+    tags_raw:
+      - Healthcare
+      - Lab Results
+      - Interoperability
       - EHR
     properties:
       - type: Documentation
